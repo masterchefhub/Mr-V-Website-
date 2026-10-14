@@ -1,0 +1,45 @@
+MR V WEBSITE - PRIVATE PASSWORD NOTE
+Keep this file private. Only teachers should have it.
+============================================================
+
+TEACHER LOGIN (Mr. V or Mr. R)
+  Site password .............. H83KJ2S92JSA
+  Classroom confirmation code  42401832
+  Classroom code (Join tab) .. test
+
+STUDENT LOGIN
+  1. Press Login (top of the page), choose Student.
+  2. Search for the name and pick it.
+  3. Type the 10 digit password below.
+  4. Type birth year (2012, 2013 or 2014), then choose month and day.
+  New students also get a free 100 V Coins on their first login.
+
+FULL NAME                  SHOWN AS         10 DIGIT PASSWORD
+------------------------------------------------------------
+Khadija Alvi               Khadija A.       3786632574
+Elizabeth Arana            Elizabeth A.     1755701383
+Makayla Bickoff            Makayla B.       2578767308
+Adam Campos                Adam C.          2895698488
+Ariana Campos              Ariana C.        8830651447
+Mariah Fardette            Mariah F.        5075470638
+Breadan Foley              Breadan F.       6036782513
+Peter Grimaldi             Peter G.         7680667225
+Luca Kaminsky              Luca K.          0588790837
+Massimo Kazandjilan        Massimo K.       4142100916
+Bennett Kleczka            Bennett K.       2536936057
+Giuliana Lanzetta          Giuliana L.      4732187443
+Austin McNamara            Austin M.        6296212999
+Eden Peral Fieseler        Eden P.          4729433828
+Oliva Portugal             Oliva P.         9668650467
+Victoria Risani            Victoria R.      7727351826
+Giuliana Sangimino         Giuliana S.      3945669797
+Meybelin Saravia Garcia    Meybelin S.      3952794153
+Kendrick Scott             Kendrick S.      8951354414
+Ethan Turner               Ethan T.         0349707423
+Genesis Ventura            Genesis V.       3988390893
+Lucas Yabut                Lucas Y.         6868272693
+Hailey Zak                 Hailey Z.        1792071868
+Mikayla Zito               Mikayla Z.       3119082935
+
+Students you create in Teacher Tools get their own 10 digit password,
+shown once when the account is made. Write it down then.
