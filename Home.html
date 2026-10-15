@@ -901,6 +901,7 @@ footer{background:#fff;color:var(--muted);border-top:1px solid var(--line)}
 .setrow input[type=range]{width:180px;margin:0}
 .setrow select.field{margin:0;padding:10px 12px;min-width:150px}
 body.compact .box{padding:26px}body.compact section.blk{padding:60px 0}
+#cfm,#rsm,#bigm,#dob,#tour,#pview{z-index:100}
 </style>
 </head>
 <body>
@@ -1698,7 +1699,7 @@ EXTRA2.forEach((e,i)=>['easy','mid','hard'].forEach(l=>D[i][l].push(...e[l])));
 /* ===== helpers ===== */
 const $=id=>document.getElementById(id);
 let ME=null;
-const isT=()=>!!ME&&(isT()||ME.role==='owner');
+const isT=()=>!!ME&&(ME.role==='teacher'||ME.role==='owner');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const shuf=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(x=>x[1]);
 const rnd=(a,b)=>Math.floor(Math.random()*(b-a+1))+a;
@@ -2404,7 +2405,7 @@ async function resetXP(){
 async function sendNote(){
   const m=$('nmsg').value.trim();
   if(!m){bad($('nmsg').closest('.box'),$('nserr'),'Type a message first.');return false}
-  if(!await notify($('nto').value,m))return false;
+  if(!await notify($('nto').value,m,undefined,false,$('nsize').value))return false;
   $('nmsg').value='';$('nserr').textContent='';return true;
 }
 const pw10=()=>{let s='';for(let i=0;i<10;i++)s+=(window.crypto&&crypto.getRandomValues?crypto.getRandomValues(new Uint8Array(1))[0]%10:rnd(0,9));return s};
@@ -3788,7 +3789,7 @@ $('mrvhero').appendChild(coin(MRV,'mrvimg','mrv'));
 $('nsl').value=S.n;$('nval').textContent=S.n;$('follow').checked=S.follow;
 paintFun();updUnit();
 preloadSounds();fillDates();loadLocal();loadSet();paintLevel();cal();setMode('stage');
-render();go('home',true);startLoader();
+render();go(ME&&ME.role==='owner'?'owner':'home',true);startLoader();
 setTimeout(resumeGame,900);
 
 </script>
