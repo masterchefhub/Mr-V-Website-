@@ -1,45 +1,133 @@
-MR V WEBSITE - PRIVATE PASSWORD NOTE
+MR V WEBSITE - PRIVATE ACCOUNT NOTE
 Keep this file private. Only teachers should have it.
-============================================================
+================================================================
 
-TEACHER LOGIN (Mr. V or Mr. R)
-  Site password .............. H83KJ2S92JSA
-  Classroom confirmation code  42401832
-  Classroom code (Join tab) .. test
+HOW STUDENTS LOG IN
+  1. Press Login at the top, choose Student.
+  2. Pick a period (or All), search for the name, pick it.
+  3. Type the 10 digit passcode below.
+  4. After logging in the site may ask for a birth year (2012, 2013 or 2014), month and day to unlock the profile. This can be skipped.
 
-STUDENT LOGIN
-  1. Press Login (top of the page), choose Student.
-  2. Search for the name and pick it.
-  3. Type the 10 digit password below.
-  4. Type birth year (2012, 2013 or 2014), then choose month and day.
-  New students also get a free 100 V Coins on their first login.
+Teacher and owner logins are NOT written in this file on purpose. Anyone who can read this file could use them.
 
-FULL NAME                  SHOWN AS         10 DIGIT PASSWORD
-------------------------------------------------------------
-Khadija Alvi               Khadija A.       3786632574
-Elizabeth Arana            Elizabeth A.     1755701383
-Makayla Bickoff            Makayla B.       2578767308
-Adam Campos                Adam C.          2895698488
-Ariana Campos              Ariana C.        8830651447
-Mariah Fardette            Mariah F.        5075470638
-Breadan Foley              Breadan F.       6036782513
-Peter Grimaldi             Peter G.         7680667225
-Luca Kaminsky              Luca K.          0588790837
-Massimo Kazandjilan        Massimo K.       4142100916
-Bennett Kleczka            Bennett K.       2536936057
-Giuliana Lanzetta          Giuliana L.      4732187443
-Austin McNamara            Austin M.        6296212999
-Eden Peral Fieseler        Eden P.          4729433828
-Oliva Portugal             Oliva P.         9668650467
-Victoria Risani            Victoria R.      7727351826
-Giuliana Sangimino         Giuliana S.      3945669797
-Meybelin Saravia Garcia    Meybelin S.      3952794153
-Kendrick Scott             Kendrick S.      8951354414
-Ethan Turner               Ethan T.         0349707423
-Genesis Ventura            Genesis V.       3988390893
-Lucas Yabut                Lucas Y.         6868272693
-Hailey Zak                 Hailey Z.        1792071868
-Mikayla Zito               Mikayla Z.       3119082935
+PERIOD CLASS CODES (periods 1 to 9, each one is different)
+  Period 1 ........ Z6MKLS
+  Period 2 ........ Q4ZE4T
+  Period 3 ........ AFKZRH
+  Period 4 ........ 5NPWC7
+  Period 5 ........ HKBKF2
+  Period 6 ........ G6AAVD
+  Period 7 ........ 7AEFA7
+  Period 8 ........ V5FWZU
+  Period 9 ........ ULQJWP
+  (Join Classroom is under construction. Periods 3, 4, 6 and 8 are open.)
 
-Students you create in Teacher Tools get their own 10 digit password,
-shown once when the account is made. Write it down then.
+PERIOD 3  (22 students)
+FULL NAME                      SHOWN AS           10 DIGIT PASSCODE
+----------------------------------------------------------------
+Yonatan Adaki                  Yonatan A.         7937410590
+Alyssa Ayub                    Alyssa A.          7142257624
+Kent Bianco                    Kent B.            0752548032
+Akia Bryan                     Akia B.            2930617784
+Phoenix Callway                Phoenix C.         1047141584
+Joseph DeMarco                 Joseph D.          5106527724
+Kiera Florio                   Kiera F.           7663835415
+William Gallagher              William G.         6050948272
+Gianluca Gesmundo              Gianluca G.        6381044402
+Ashley Gigila                  Ashley G.          1607520515
+Emily Quevara Cruz             Emily Q.           8344545856
+Zoey Jung                      Zoey Jung          5933836961
+Taylor Lawrence                Taylor L.          2613869639
+Jackson Liskow                 Jackson L.         2874890959
+Christopher Lucero Sarceno     Christopher L.     7794739359
+Caitlin Maggiore               Caitlin M.         5541397385
+Sarah Pensamiento Bratti       Sarah P.           4320859633
+Diego Quirogas Escobar         Diego Q.           9252114613
+Juliana Reciniello             Juliana R.         3309979233
+Jolie Roman                    Jolie R.           5354276778
+Tiffany Show                   Tiffany S.         7383111137
+Rebecca Station                Rebecca S.         6377736770
+
+PERIOD 4  (21 students)
+FULL NAME                      SHOWN AS           10 DIGIT PASSCODE
+----------------------------------------------------------------
+Hunter Allstadt                Hunter A.          7532097699
+Carter Baravarian              Carter B.          7769373735
+Finn Borg                      Finn Borg          5769478252
+Jenna Brenseke                 Jenna B.           9085141568
+Emma Buckely                   Emma B.            4820482525
+Samuel Davis                   Samuel D.          4771995979
+Betty Driscoll                 Betty D.           8042300786
+Hansel Fuentess Murillo        Hansel F.          4165965149
+Elizabeth Ho                   Elizabeth H.       3274137315
+Savannah Hardy                 Savannah H.        2750023588
+Ella Negreira                  Ella N.            1631658217
+Frank Ofrias                   Frank O.           9860362565
+Ava Oliviera                   Ava O.             8520235014
+Sean Reinhardt                 Sean R.            6828680883
+Anthony Repetti                Anthony R.         6043518481
+Macky Robert                   Macky R.           2874811399
+Madison Roseto                 Madison R.         1671464729
+Sakina Shazad                  Sakina S.          0083938201
+Kaia Trombetta                 Kaia T.            3765548584
+Liam Vivas-Colman              Liam V.            8853572207
+Brynn Winters                  Brynn W.           8587980591
+
+PERIOD 6  (24 students)
+FULL NAME                      SHOWN AS           10 DIGIT PASSCODE
+----------------------------------------------------------------
+Kyla Ashcroff                  Kyla A.            6579916763
+Luke Caviedes                  Luke C.            6153387474
+Christopher Clarke             Christopher C.     6186408041
+Jeremy Cruz                    Jeremy C.          4202169565
+Saika Dalusma                  Saika D.           2724280826
+Juliana Dos Santos             Juliana D.         6104238174
+Aaron Edwards                  Aaron E.           8608287419
+Melanie Fardette               Melanie F.         5557600496
+Joshua Flores Padilla          Joshua F.          1471984550
+Melany Guevara Cruz            Melany G.          6763512767
+Colton Hughes                  Colton H.          0664395290
+Leo Johnson                    Leo J.             5379802263
+Francesca Lanzetta             Francesca L.       7498291792
+Isabelle Minkoff               Isabelle M.        2569908167
+Jack Mitola                    Jack M.            3747042304
+Isabella Molina-Narvaes        Isabella M.        2824422607
+Grace Park                     Grace P.           8879010467
+Jacqueline Paz                 Jacqueline P.      9856686656
+Damian Peranio                 Damian P.          4071106152
+Juila Petrone                  Juila P.           8731316510
+Alessandro Ponce Martinez      Alessandro P.      1904114333
+Declan Rennard                 Declan R.          5402987067
+Jace Rowe                      Jace Rowe          6723943847
+Danie Schnipper                Danie S.           4784012999
+
+PERIOD 8  (24 students)
+FULL NAME                      SHOWN AS           10 DIGIT PASSCODE
+----------------------------------------------------------------
+Khadija Alvi                   Khadija A.         7132954006
+Elizabeth Arana                Elizabeth A.       1430284065
+Makayla Bickoff                Makayla B.         1091122456
+Adam Campos                    Adam C.            6400165551
+Ariana Campos                  Ariana C.          3723712562
+Mariah Fardette                Mariah F.          0093356626
+Breadan Foley                  Breadan F.         3586216797
+Peter Grimaldi                 Peter G.           7447946815
+Luca Kaminsky                  Luca K.            0942122564
+Massimo Kazandjilan            Massimo K.         7829040050
+Bennett Kleczka                Bennett K.         0616356950
+Giuliana Lanzetta              Giuliana L.        8808176836
+Austin McNamara                Austin M.          5505031930
+Eden Peral Fieseler            Eden P.            1722685897
+Oliva Portugal                 Oliva P.           9526299848
+Victoria Risani                Victoria R.        6743848810
+Giuliana Sangimino             Giuliana S.        5616872880
+Meybelin Saravia Garcia        Meybelin S.        2134129453
+Kendrick Scott                 Kendrick S.        9571217948
+Ethan Turner                   Ethan T.           3950970965
+Genesis Ventura                Genesis V.         9408203909
+Lucas Yabut                    Lucas Y.           1557956023
+Hailey Zak                     Hailey Z.          7364618247
+Mikayla Zito                   Mikayla Z.         4240392041
+
+Students you create in Teacher Tools get their own passcode, shown once when the account is made.
+Generated: 2026-10-15
