@@ -1,137 +1,110 @@
-MR V WEBSITE - PRIVATE ACCOUNT NOTE
-Keep this file private. Only teachers should have it.
-================================================================
+MR. V WEBSITE - LOGIN INFO (keep private)
 
-TEACHER LOGIN (Mr. V or Mr. R)
-  Site password .............. H83KJ2S92JSA
-  Classroom confirmation code  42401832
+OWNER / TEACHER LOGINS
+Teacher site password: H83KJ2S92JSA
+Classroom confirmation code: 42401832
+Owner password: OWN92LKS9AKQ83JSA
+Owner gate code (owner tab): 57392
+Teachers: pick Mr. V or Mr. R, then enter the site password + classroom confirmation code.
+Owner: owner password + site password + confirmation code, then the gate code.
 
-HOW STUDENTS LOG IN
-  1. Press Login at the top, choose Student.
-  2. Pick a period (or All), search for the name, pick it.
-  3. Type the 10 digit passcode below.
-  4. After logging in the site may ask for a birth year (2012, 2013 or 2014), month and day to unlock the profile. This can be skipped.
+STUDENTS (pick name, enter password)
 
-Teacher and owner logins are NOT written in this file on purpose. Anyone who can read this file could use them.
+--- Period 3 ---
+Akia Bryan | username: akia-bryan | password: 2893150770
+Alyssa Ayub | username: alyssa-ayub | password: 7818174037
+Ashley Gigila | username: ashley-gigila | password: 9449928067
+Caitlin Maggiore | username: caitlin-maggiore | password: 1370675237
+Christopher Lucero Sarceno | username: christopher-lucero-sarceno | password: 4262775963
+Diego Quirogas Escobar | username: diego-quirogas-escobar | password: 9503477340
+Emily Quevara Cruz | username: emily-quevara-cruz | password: 4524914838
+Gianluca Gesmundo | username: gianluca-gesmundo | password: 5162661017
+Jackson Liskow | username: jackson-liskow | password: 5642917545
+Jolie Roman | username: jolie-roman | password: 4306301118
+Joseph DeMarco | username: joseph-demarco | password: 1395741647
+Juliana Reciniello | username: juliana-reciniello | password: 6072938328
+Kent Bianco | username: kent-bianco | password: 3575408042
+Kiera Florio | username: kiera-florio | password: 8809827442
+Phoenix Callway | username: phoenix-callway | password: 0617996806
+Rebecca Station | username: rebecca-station | password: 4968698781
+Sarah Pensamiento Bratti | username: sarah-pensamiento-bratti | password: 8496548851
+Taylor Lawrence | username: taylor-lawrence | password: 5375286774
+Tiffany Show | username: tiffany-show | password: 9030300607
+William Gallagher | username: william-gallagher | password: 1534187347
+Yonatan Adaki | username: yonatan-adaki | password: 6617373045
+Zoey Jung | username: zoey-jung | password: 9881861156
 
-PERIOD CLASS CODES (periods 1 to 9, each one is different)
-  Period 1 ........ Z6MKLS
-  Period 2 ........ Q4ZE4T
-  Period 3 ........ AFKZRH
-  Period 4 ........ 5NPWC7
-  Period 5 ........ HKBKF2
-  Period 6 ........ G6AAVD
-  Period 7 ........ 7AEFA7
-  Period 8 ........ V5FWZU
-  Period 9 ........ ULQJWP
-  (Join Classroom is under construction. Periods 3, 4, 6 and 8 are open.)
+--- Period 4 ---
+Anthony Repetti | username: anthony-repetti | password: 2960376608
+Ava Oliviera | username: ava-oliviera | password: 5602289361
+Betty Driscoll | username: betty-driscoll | password: 0666551256
+Brynn Winters | username: brynn-winters | password: 2786439380
+Carter Baravarian | username: carter-baravarian | password: 0370147627
+Elizabeth Ho | username: elizabeth-ho | password: 8172154618
+Ella Negreira | username: ella-negreira | password: 0999409691
+Emma Buckely | username: emma-buckely | password: 0949060610
+Finn Borg | username: finn-borg | password: 2171315026
+Frank Ofrias | username: frank-ofrias | password: 3873876485
+Hansel Fuentess Murillo | username: hansel-fuentess-murillo | password: 8664748978
+Hunter Allstadt | username: hunter-allstadt | password: 4582617814
+Jenna Brenseke | username: jenna-brenseke | password: 1017307406
+Kaia Trombetta | username: kaia-trombetta | password: 2553953247
+Liam Vivas-Colman | username: liam-vivas-colman | password: 2951277355
+Macky Robert | username: macky-robert | password: 2844909914
+Madison Roseto | username: madison-roseto | password: 1195899406
+Sakina Shazad | username: sakina-shazad | password: 3396410162
+Samuel Davis | username: samuel-davis | password: 0115855646
+Savannah Hardy | username: savannah-hardy | password: 7320469096
+Sean Reinhardt | username: sean-reinhardt | password: 4774248563
 
-PERIOD 3  (22 students)
-FULL NAME                      SHOWN AS           10 DIGIT PASSCODE
-----------------------------------------------------------------
-Yonatan Adaki                  Yonatan A.         7937410590
-Alyssa Ayub                    Alyssa A.          7142257624
-Kent Bianco                    Kent B.            0752548032
-Akia Bryan                     Akia B.            2930617784
-Phoenix Callway                Phoenix C.         1047141584
-Joseph DeMarco                 Joseph D.          5106527724
-Kiera Florio                   Kiera F.           7663835415
-William Gallagher              William G.         6050948272
-Gianluca Gesmundo              Gianluca G.        6381044402
-Ashley Gigila                  Ashley G.          1607520515
-Emily Quevara Cruz             Emily Q.           8344545856
-Zoey Jung                      Zoey Jung          5933836961
-Taylor Lawrence                Taylor L.          2613869639
-Jackson Liskow                 Jackson L.         2874890959
-Christopher Lucero Sarceno     Christopher L.     7794739359
-Caitlin Maggiore               Caitlin M.         5541397385
-Sarah Pensamiento Bratti       Sarah P.           4320859633
-Diego Quirogas Escobar         Diego Q.           9252114613
-Juliana Reciniello             Juliana R.         3309979233
-Jolie Roman                    Jolie R.           5354276778
-Tiffany Show                   Tiffany S.         7383111137
-Rebecca Station                Rebecca S.         6377736770
+--- Period 6 ---
+Aaron Edwards | username: aaron-edwards | password: 9121701838
+Alessandro Ponce Martinez | username: alessandro-ponce-martinez | password: 8941074008
+Christopher Clarke | username: christopher-clarke | password: 6832631668
+Colton Hughes | username: colton-hughes | password: 4040187882
+Damian Peranio | username: damian-peranio | password: 9992084597
+Danie Schnipper | username: danie-schnipper | password: 1459534308
+Declan Rennard | username: declan-rennard | password: 0064037627
+Francesca Lanzetta | username: francesca-lanzetta | password: 1754288451
+Grace Park | username: grace-park | password: 5754185188
+Isabella Molina-Narvaes | username: isabella-molina-narvaes | password: 0471183501
+Isabelle Minkoff | username: isabelle-minkoff | password: 3716414223
+Jace Rowe | username: jace-rowe | password: 0508274824
+Jack Mitola | username: jack-mitola | password: 6491219759
+Jacqueline Paz | username: jacqueline-paz | password: 8668548009
+Jeremy Cruz | username: jeremy-cruz | password: 1140918038
+Joshua Flores Padilla | username: joshua-flores-padilla | password: 0784938204
+Juila Petrone | username: juila-petrone | password: 4140620463
+Juliana Dos Santos | username: juliana-dos-santos | password: 5475184238
+Kyla Ashcroff | username: kyla-ashcroff | password: 4587949115
+Leo Johnson | username: leo-johnson | password: 7361435106
+Luke Caviedes | username: luke-caviedes | password: 1833838682
+Melanie Fardette | username: melanie-fardette | password: 2411160035
+Melany Guevara Cruz | username: melany-guevara-cruz | password: 8794186273
+Saika Dalusma | username: saika-dalusma | password: 8108056939
 
-PERIOD 4  (21 students)
-FULL NAME                      SHOWN AS           10 DIGIT PASSCODE
-----------------------------------------------------------------
-Hunter Allstadt                Hunter A.          7532097699
-Carter Baravarian              Carter B.          7769373735
-Finn Borg                      Finn Borg          5769478252
-Jenna Brenseke                 Jenna B.           9085141568
-Emma Buckely                   Emma B.            4820482525
-Samuel Davis                   Samuel D.          4771995979
-Betty Driscoll                 Betty D.           8042300786
-Hansel Fuentess Murillo        Hansel F.          4165965149
-Elizabeth Ho                   Elizabeth H.       3274137315
-Savannah Hardy                 Savannah H.        2750023588
-Ella Negreira                  Ella N.            1631658217
-Frank Ofrias                   Frank O.           9860362565
-Ava Oliviera                   Ava O.             8520235014
-Sean Reinhardt                 Sean R.            6828680883
-Anthony Repetti                Anthony R.         6043518481
-Macky Robert                   Macky R.           2874811399
-Madison Roseto                 Madison R.         1671464729
-Sakina Shazad                  Sakina S.          0083938201
-Kaia Trombetta                 Kaia T.            3765548584
-Liam Vivas-Colman              Liam V.            8853572207
-Brynn Winters                  Brynn W.           8587980591
-
-PERIOD 6  (24 students)
-FULL NAME                      SHOWN AS           10 DIGIT PASSCODE
-----------------------------------------------------------------
-Kyla Ashcroff                  Kyla A.            6579916763
-Luke Caviedes                  Luke C.            6153387474
-Christopher Clarke             Christopher C.     6186408041
-Jeremy Cruz                    Jeremy C.          4202169565
-Saika Dalusma                  Saika D.           2724280826
-Juliana Dos Santos             Juliana D.         6104238174
-Aaron Edwards                  Aaron E.           8608287419
-Melanie Fardette               Melanie F.         5557600496
-Joshua Flores Padilla          Joshua F.          1471984550
-Melany Guevara Cruz            Melany G.          6763512767
-Colton Hughes                  Colton H.          0664395290
-Leo Johnson                    Leo J.             5379802263
-Francesca Lanzetta             Francesca L.       7498291792
-Isabelle Minkoff               Isabelle M.        2569908167
-Jack Mitola                    Jack M.            3747042304
-Isabella Molina-Narvaes        Isabella M.        2824422607
-Grace Park                     Grace P.           8879010467
-Jacqueline Paz                 Jacqueline P.      9856686656
-Damian Peranio                 Damian P.          4071106152
-Juila Petrone                  Juila P.           8731316510
-Alessandro Ponce Martinez      Alessandro P.      1904114333
-Declan Rennard                 Declan R.          5402987067
-Jace Rowe                      Jace Rowe          6723943847
-Danie Schnipper                Danie S.           4784012999
-
-PERIOD 8  (24 students)
-FULL NAME                      SHOWN AS           10 DIGIT PASSCODE
-----------------------------------------------------------------
-Khadija Alvi                   Khadija A.         7132954006
-Elizabeth Arana                Elizabeth A.       1430284065
-Makayla Bickoff                Makayla B.         1091122456
-Adam Campos                    Adam C.            6400165551
-Ariana Campos                  Ariana C.          3723712562
-Mariah Fardette                Mariah F.          0093356626
-Breadan Foley                  Breadan F.         3586216797
-Peter Grimaldi                 Peter G.           7447946815
-Luca Kaminsky                  Luca K.            0942122564
-Massimo Kazandjilan            Massimo K.         7829040050
-Bennett Kleczka                Bennett K.         0616356950
-Giuliana Lanzetta              Giuliana L.        8808176836
-Austin McNamara                Austin M.          5505031930
-Eden Peral Fieseler            Eden P.            1722685897
-Oliva Portugal                 Oliva P.           9526299848
-Victoria Risani                Victoria R.        6743848810
-Giuliana Sangimino             Giuliana S.        5616872880
-Meybelin Saravia Garcia        Meybelin S.        2134129453
-Kendrick Scott                 Kendrick S.        9571217948
-Ethan Turner                   Ethan T.           3950970965
-Genesis Ventura                Genesis V.         9408203909
-Lucas Yabut                    Lucas Y.           1557956023
-Hailey Zak                     Hailey Z.          7364618247
-Mikayla Zito                   Mikayla Z.         4240392041
-
-Students you create in Teacher Tools get their own passcode, shown once when the account is made.
-Generated: 2026-10-15
+--- Period 8 ---
+Adam Campos | username: adam-campos | password: 5919855959
+Ariana Campos | username: ariana-campos | password: 1963453941
+Austin McNamara | username: austin-mcnamara | password: 1527985584
+Bennett Kleczka | username: bennett-kleczka | password: 7956703225
+Breadan Foley | username: breadan-foley | password: 4420029688
+Eden Peral Fieseler | username: eden-peral-fieseler | password: 3187608877
+Elizabeth Arana | username: elizabeth-arana | password: 3246355744
+Ethan Turner | username: ethan-turner | password: 2543773490
+Genesis Ventura | username: genesis-ventura | password: 9773760571
+Giuliana Lanzetta | username: giuliana-lanzetta | password: 3194947798
+Giuliana Sangimino | username: giuliana-sangimino | password: 7854019013
+Hailey Zak | username: hailey-zak | password: 1747303918
+Kendrick Scott | username: kendrick-scott | password: 0542226585
+Khadija Alvi | username: khadija-alvi | password: 1093084139
+Luca Kaminsky | username: luca-kaminsky | password: 8097657687
+Lucas Yabut | username: lucas-yabut | password: 1953498137
+Makayla Bickoff | username: makayla-bickoff | password: 4192689787
+Mariah Fardette | username: mariah-fardette | password: 6740313543
+Massimo Kazandjilan | username: massimo-kazandjilan | password: 9055893100
+Meybelin Saravia Garcia | username: meybelin-saravia-garcia | password: 0258666147
+Mikayla Zito | username: mikayla-zito | password: 2515476554
+Oliva Portugal | username: oliva-portugal | password: 0992517100
+Peter Grimaldi | username: peter-grimaldi | password: 6707138221
+Victoria Risani | username: victoria-risani | password: 5461072411
