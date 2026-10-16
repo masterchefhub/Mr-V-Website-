@@ -2,6 +2,10 @@ MR V WEBSITE - PRIVATE ACCOUNT NOTE
 Keep this file private. Only teachers should have it.
 ================================================================
 
+TEACHER LOGIN (Mr. V or Mr. R)
+  Site password .............. H83KJ2S92JSA
+  Classroom confirmation code  42401832
+
 HOW STUDENTS LOG IN
   1. Press Login at the top, choose Student.
   2. Pick a period (or All), search for the name, pick it.
