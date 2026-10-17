@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Page not found | Mr V</title>
+<style>
+  :root{--blue:#2563eb;--blue2:#1d4ed8;--bg:#f6f9ff;--ink:#0f172a;--muted:#5b6478;--line:#e2e8f3}
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 25% 15%,#fff,#dbeafe 60%,#bfdbfe);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);text-align:center}
+  .card{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:28px;padding:48px 36px;max-width:460px;width:100%;box-shadow:0 24px 60px rgba(37,99,235,.15);animation:up .5s}
+  .v{font:900 7rem/1 Inter,system-ui,sans-serif;letter-spacing:-.04em;color:var(--blue);animation:float 2.6s ease-in-out infinite}
+  h1{margin:12px 0 6px;font-size:3rem;font-weight:900;letter-spacing:-.02em}
+  p{margin:0 0 26px;color:var(--muted);line-height:1.6}
+  a{display:inline-block;background:linear-gradient(180deg,#3b82f6,var(--blue2));color:#fff;text-decoration:none;font-weight:800;border-radius:14px;padding:14px 30px;box-shadow:0 10px 24px rgba(37,99,235,.35);transition:transform .2s}
+  a:hover{transform:translateY(-3px)}
+  a:focus-visible{outline:3px solid #93c5fd;outline-offset:3px}
+  @keyframes float{50%{transform:translateY(-8px)}}
+  @keyframes up{from{opacity:0;transform:translateY(20px)}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="v" aria-hidden="true">V</div>
+    <h1>404</h1>
+    <p>Oops! This page does not exist. It may have moved, or the link is wrong.</p>
+    <a href="https://vandernoth.com">Return home</a>
+  </main>
+</body>
+</html>
