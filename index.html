@@ -1010,6 +1010,8 @@ body.presenting .devpill{display:none}
 .tier{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 12px;font-weight:800;font-size:.78rem;background:var(--soft);color:var(--blue2)}
 .tier.starter{background:linear-gradient(135deg,#fef3c7,#fde68a);color:#92400e}
 .tier.plus{background:linear-gradient(135deg,#ede9fe,#c4b5fd);color:#5b21b6}
+.deverr{background:#fef2f2;border:1.5px solid #fca5a5;color:#b91c1c;border-radius:14px;padding:12px 14px;margin:14px 0 0;font-weight:600;font-size:.9rem;line-height:1.5;text-align:left;animation:shake .4s}
+.deverr .i{width:16px;height:16px;vertical-align:-3px}
 
 /* ===== v9 · practice ===== */
 .qimgw{margin:0 0 14px;text-align:center}
@@ -1324,6 +1326,27 @@ button.gopt{cursor:pointer;transition:transform .15s}button.gopt:hover{transform
 .lclose{box-sizing:border-box;width:36px;height:36px;min-width:36px;padding:0;border-radius:50%;display:inline-grid;place-items:center;line-height:1;flex:none}
 .lclose .i{width:15px;height:15px}
 .pvbox .mx{background:rgba(255,255,255,.28)!important;color:#fff!important;z-index:5}
+
+
+/* ===== v9 · UI polish ===== */
+.jgnote{text-align:center;padding:14px 8px}.jgnote b{font-size:1.1rem}.jgnote p{margin:8px 0 0;color:var(--muted)}
+.mrvfb{flex:none;aspect-ratio:1/1}
+span.mrvimg.mrvfb{width:240px;height:240px;max-height:none;font-size:2.6rem}
+.toast .tp{padding:0;border:0;border-radius:0;height:3px;font-size:0;cursor:default;min-width:0}
+@media(max-width:760px){
+  header .wrap{flex-wrap:wrap;gap:8px;align-items:center}
+  .brand{flex:0 1 auto}
+  header .wrap{gap:6px}
+  .verlink{padding:0;width:32px;height:32px;justify-content:center}.verlink span{display:none}
+  .bell{width:36px;height:36px;flex:none}
+  .whochip{flex:none}
+  .vcchip,.xpchip{padding:4px 10px 4px 5px;gap:6px;font-size:.85rem;min-height:0;flex:none}
+  .vcchip .coin,.xpchip .coin{width:26px;height:26px}
+  #toasts{left:10px;right:10px;bottom:10px;gap:8px}
+  .toast{padding:10px 40px 10px 12px;border-radius:14px;max-width:none;width:100%;gap:10px}
+  .toast .ti{width:30px;height:30px;border-radius:10px}.toast .tb{font-size:.85rem;line-height:1.4}
+  span.mrvimg.mrvfb{width:170px;height:170px;font-size:2rem}
+}
 
 </style>
 </head>
@@ -3211,7 +3234,7 @@ $('dskip').onclick=()=>{$('dob').classList.add('hide');syncScroll();pushToast('N
 const needTour=()=>!!ME&&!PF(ME.id).toured&&localStorage.getItem('mrv_tour_'+ME.id)!=='1';
 let tstep=0;
 function tourSteps(){
-  const f=esc(ME.name.split(' ')[0]);
+  const f=esc(/^(Mr|Mrs|Ms|Dr)\.?\s/i.test(ME.name)?ME.name:ME.name.split(' ')[0]);
   if(isT())return [
    {t:'Hello, '+f+'!',p:"YO WHAT'S CRACKALAKIN FOOLS! It's me, Mr. V. Here is a quick tour of your teacher tools."},
    {t:'Teacher Tools',p:'Open the Teacher Tools tab and a window asks "What do you want to do?"',l:['<b>XP &amp; Coins:</b> give class XP (max 500) and set how many coins students earn.','<b>Notify:</b> send a small or a big pop-up to everyone or one student.','<b>Suspend or ban</b> with a time limit and a reason, and <b>lock tabs</b>.','<b>Online:</b> see who is logged in and force a log out.','<b>Dates, Presentations, Music, Color</b> and the <b>user info</b> file.']},
@@ -3576,7 +3599,7 @@ function restoreSession(){
   try{if(sessionStorage.getItem('mrv_owner')==='1'||String(window.name).indexOf('mrvown:1')===0)ME={role:'owner',id:'owner',name:'Owner'}}catch(e){}
   if(!ME){
     const s=sessGet();
-    if(s&&Date.now()-s.t<14*864e5){
+    if(s){
       if(s.role==='teacher'&&TEACHERS[s.id])ME={role:'teacher',id:s.id,name:TEACHERS[s.id].name};
       else if(s.role==='student'&&allStudents()[s.id])ME={role:'student',id:s.id,name:allStudents()[s.id].name};
     }
@@ -4535,25 +4558,50 @@ function sfx(name){
   if(!SET.sound)return;
   try{
     AC=AC||new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();
-    const N={click:[[900,0,.04,'square']],tab:[[520,0,.06],[700,.06,.07]],notify:[[784,0,.14],[1047,.14,.26]],coin:[[1250,0,.05],[1750,.05,.09]],
-      login:[[523,0,.13],[659,.13,.13],[784,.26,.24]],start:[[440,0,.1],[660,.1,.1],[880,.2,.24]],over:[[330,0,.16],[220,.16,.34]],pop:[[600,0,.05],[900,.05,.06]],open:[[600,0,.06],[800,.06,.1]],
-      ding:[[1568,0,.5,'sine',1],[2349,0,.4,'sine',.35],[1175,.0,.6,'sine',.4]],
-      error:[[196,0,.12,'sawtooth',1.1],[147,.13,.24,'sawtooth',1.1]],
-      success:[[523,0,.09],[659,.09,.09],[784,.18,.09],[1047,.27,.34]],
-      tick:[[1100,0,.025,'square',.6]],
-      buzz:[[120,0,.35,'sawtooth',1.2]],
-      win:[[523,0,.12],[659,.12,.12],[784,.24,.12],[1047,.36,.14],[784,.5,.1],[1047,.6,.12],[1319,.72,.5]],
-      lock:[[300,0,.07,'square',.7],[200,.07,.1,'square',.7]],
-      unlock:[[500,0,.07],[750,.07,.07],[1000,.14,.18]],
-      send:[[700,0,.05],[1000,.05,.09]],
-      recv:[[880,0,.08],[660,.08,.12]],
-      whoosh:[[300,0,.28,'sine',.5,1400]],
-      levelup:[[392,0,.09],[523,.09,.09],[659,.18,.09],[784,.27,.09],[1047,.36,.4]]
+    const t0=AC.currentTime,vol=(SET.vol||70)/100*.26;
+    /* shared output: soft low-pass, gentle compressor and a tiny echo for air */
+    if(!AC._m){
+      const m=AC.createGain(),lp=AC.createBiquadFilter(),cp=AC.createDynamicsCompressor(),dl=AC.createDelay(),fb=AC.createGain(),wet=AC.createGain();
+      lp.type='lowpass';lp.frequency.value=7500;dl.delayTime.value=.11;fb.gain.value=.28;wet.gain.value=.2;
+      m.connect(lp);lp.connect(cp);cp.connect(AC.destination);lp.connect(dl);dl.connect(fb);fb.connect(dl);dl.connect(wet);wet.connect(cp);
+      const nb=AC.createBuffer(1,AC.sampleRate*.5,AC.sampleRate),nd=nb.getChannelData(0);for(let i=0;i<nd.length;i++)nd[i]=Math.random()*2-1;
+      AC._m=m;AC._n=nb;
+    }
+    const M=AC._m;
+    /* one voice: sine/triangle with a quick attack and smooth decay, optional pitch glide */
+    const tone=(f,d,l,g,ty,to)=>{const o=AC.createOscillator(),e=AC.createGain(),s=t0+d;o.type=ty||'sine';o.frequency.setValueAtTime(f,s);if(to)o.frequency.exponentialRampToValueAtTime(to,s+l);
+      e.gain.setValueAtTime(.0001,s);e.gain.exponentialRampToValueAtTime(Math.max(.0002,vol*(g||1)),s+.008);e.gain.exponentialRampToValueAtTime(.0001,s+l);
+      o.connect(e);e.connect(M);o.start(s);o.stop(s+l+.03)};
+    /* glassy bell: fundamental plus soft overtones */
+    const bell=(f,d,l,g)=>{g=g||1;tone(f,d,l,g);tone(f*2,d,l*.6,g*.28);tone(f*2.76,d,l*.35,g*.12)};
+    /* short filtered noise for clicks and whooshes */
+    const puff=(d,l,g,fq,to,q)=>{const n=AC.createBufferSource(),fl=AC.createBiquadFilter(),e=AC.createGain(),s=t0+d;n.buffer=AC._n;fl.type='bandpass';fl.Q.value=q||1.2;fl.frequency.setValueAtTime(fq,s);if(to)fl.frequency.exponentialRampToValueAtTime(to,s+l);
+      e.gain.setValueAtTime(.0001,s);e.gain.exponentialRampToValueAtTime(Math.max(.0002,vol*g*3),s+Math.min(.012,l/3));e.gain.exponentialRampToValueAtTime(.0001,s+l);
+      n.connect(fl);fl.connect(e);e.connect(M);n.start(s);n.stop(s+l+.03)};
+    const S={
+      click:()=>{tone(620,0,.05,.9,'sine',320);puff(0,.02,.25,3200)},
+      tick:()=>puff(0,.018,.5,4200,0,2),
+      tab:()=>{tone(520,0,.09,.5,'triangle');tone(780,.05,.12,.5,'triangle')},
+      pop:()=>{tone(320,0,.09,1.3,'sine',900)},
+      open:()=>{puff(0,.14,.35,500,2600);tone(440,0,.14,.4,'sine',760)},
+      whoosh:()=>puff(0,.3,.7,300,3000,.9),
+      notify:()=>{bell(880,0,.5,.9);bell(1320,.13,.7,.8)},
+      ding:()=>{bell(1568,0,.9,1);tone(2349,0,.5,.3)},
+      coin:()=>{bell(1319,0,.16,.9);bell(1976,.07,.4,.9)},
+      login:()=>{[523,659,784].forEach((f,i)=>bell(f,i*.09,.5,.8));bell(1047,.28,.8,.8)},
+      start:()=>{puff(0,.22,.4,400,2400);[330,440,660].forEach((f,i)=>tone(f,i*.08,.3,.6,'triangle'));bell(880,.26,.6,.9)},
+      success:()=>{[659,784,988].forEach((f,i)=>bell(f,i*.08,.35,.8));bell(1319,.26,.7,.9)},
+      win:()=>{[523,659,784,1047].forEach((f,i)=>bell(f,i*.1,.4,.8));bell(784,.46,.2,.6);bell(1047,.56,.2,.7);[1319,1568,2093].forEach((f,i)=>bell(f,.7+i*.07,.8,.7))},
+      levelup:()=>{[392,523,659,784].forEach((f,i)=>bell(f,i*.08,.35,.8));puff(.3,.35,.35,1500,5000);bell(1047,.34,.9,.95)},
+      error:()=>{tone(230,0,.14,1,'triangle',170);tone(170,.12,.22,1,'triangle',120)},
+      buzz:()=>{tone(110,0,.32,.8,'triangle',85);tone(112,0,.32,.6,'square',87)},
+      over:()=>{[392,330,262].forEach((f,i)=>tone(f,i*.15,.4,.7,'triangle'));tone(196,.45,.6,.7,'sine')},
+      lock:()=>{tone(260,0,.07,1.2,'triangle',170);puff(0,.03,.35,1800)},
+      unlock:()=>{tone(420,0,.08,.7,'triangle',620);bell(988,.07,.4,.7)},
+      send:()=>{puff(0,.12,.3,900,3500);tone(600,0,.1,.5,'sine',1100)},
+      recv:()=>{tone(1100,0,.08,.6,'sine',800);tone(800,.08,.16,.5,'sine',640)}
     }[name];
-    if(!N)return;const t=AC.currentTime,vol=(SET.vol||70)/100*.2;
-    N.forEach(([f,d,l,ty,gm,to])=>{const o=AC.createOscillator(),g=AC.createGain();o.type=ty||'sine';o.frequency.setValueAtTime(f,t+d);if(to)o.frequency.exponentialRampToValueAtTime(to,t+d+l);
-      const pk=Math.max(.0002,vol*(gm||1));g.gain.setValueAtTime(.0001,t+d);g.gain.exponentialRampToValueAtTime(pk,t+d+.015);g.gain.exponentialRampToValueAtTime(.0001,t+d+l+.05);
-      o.connect(g);g.connect(AC.destination);o.start(t+d);o.stop(t+d+l+.08)});
+    if(S)S();
   }catch(e){}
 }
 document.addEventListener('pointerdown',()=>{try{if(AC&&AC.state==='suspended')AC.resume()}catch(e){}},{once:true,capture:true});
@@ -4622,24 +4670,25 @@ function detectDevice(){
   if(/iPad/.test(ua)||(/Macintosh/.test(ua)&&touch>1))return {cls:'mobile',os:'iPad'};
   if(/Android/.test(ua))return {cls:'mobile',os:/Mobile/.test(ua)?'Android phone':'Android tablet'};
   if(/Macintosh|Mac OS X/.test(ua))return {cls:'pc',os:'Mac'};
+  if(/Linux|X11/.test(ua)&&!/Windows/.test(ua))return {cls:'pc',os:'Linux'};
   return {cls:'pc',os:'Windows'};
 }
-const DEVOS={pc:['Windows','Chromebook','Mac'],mobile:['iPad','iPhone','Android phone','Android tablet']};
-let DEV=null,devPick=null;
+const DEVOS={pc:['Windows','Mac','Chromebook','Linux'],mobile:['iPad','iPhone','Android phone','Android tablet']};
+let DEV=null,devPick=null,devErr='';
 function loadDev(){try{DEV=JSON.parse(localStorage.getItem('mrv_dev')||'null')}catch(e){DEV=null}applyDev()}
-function applyDev(){document.body.classList.toggle('dev-mobile',!!DEV&&DEV.cls==='mobile');document.body.dataset.device=DEV?DEV.cls:''}
+function applyDev(){document.body.classList.toggle('dev-mobile',!!DEV&&DEV.cls==='mobile');document.body.dataset.device=DEV?DEV.cls:'';const sp=document.querySelector('#devpill span');if(sp)sp.textContent=DEV?'Device: '+DEV.os:'Choose your device'}
 const devLabel=d=>d?(d.cls==='pc'?'Computer / PC':'Mobile / Tablet')+' · '+d.os:'Not chosen yet';
 function ensureDev(){
   if($('devpill'))return;
-  const p=document.createElement('button');p.id='devpill';p.className='devpill';p.innerHTML=ic('monitor')+'<span>Device config</span><kbd>P</kbd>';p.setAttribute('aria-label','Device config. Press P to hide.');
+  const p=document.createElement('button');p.id='devpill';p.className='devpill';p.innerHTML=ic('monitor')+'<span>Device config</span>';p.setAttribute('aria-label','Device config');
   $('v9root').appendChild(p);p.onclick=()=>openDevice(false);
   const m=document.createElement('div');m.className='modal hide';m.id='devmodal';m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');m.setAttribute('aria-label','Device config');$('v9root').appendChild(m);
   m.addEventListener('click',e=>{if(e.target===m&&!m.dataset.first)closeDevice()});
-  try{if(sessionStorage.getItem('mrv_devhide')==='1')p.classList.add('hide')}catch(e){}
+  applyDev();
 }
 function openDevice(first){
   ensureDev();const m=$('devmodal'),det=detectDevice();
-  devPick=DEV?{cls:DEV.cls,os:DEV.os}:null;m.dataset.first=first?'1':'';
+  devErr='';devPick=DEV?{cls:DEV.cls,os:DEV.os}:null;m.dataset.first=first?'1':'';
   const paint=()=>{
     m.innerHTML='<div class="mbox devbox">'+(first||!DEV?'':'<button class="mx dark" id="devx" aria-label="Close">'+ic('star')+'</button>')+
       '<div class="dvic">'+ic('monitor')+'</div><h3>Which device are you using?</h3>'+
@@ -4647,7 +4696,7 @@ function openDevice(first){
       '<button class="btn primary" id="devauto" style="width:100%;justify-content:center;margin:10px 0 18px">'+ic('spark')+' Auto choose the right device</button>'+
       '<div class="devcols"><div class="devcol"><div class="lab">Computer / PC</div>'+DEVOS.pc.map(o=>'<button class="devopt'+(devPick&&devPick.cls==='pc'&&devPick.os===o?' on':'')+'" data-dev="pc|'+o+'">'+ic('monitor')+o+'</button>').join('')+'</div>'+
       '<div class="devcol"><div class="lab">Mobile / Tablet</div>'+DEVOS.mobile.map(o=>'<button class="devopt'+(devPick&&devPick.cls==='mobile'&&devPick.os===o?' on':'')+'" data-dev="mobile|'+o+'">'+ic('smile')+o+'</button>').join('')+'</div></div>'+
-      '<p class="note" style="margin:16px 0 14px">'+(devPick?'You picked: <b>'+devLabel(devPick)+'</b>':'Pick your device to continue.')+(first?' You can not close this until you choose.':'')+'</p>'+
+      (devErr?'<div class="deverr" role="alert">'+ic('alert')+' '+devErr+'</div>':'')+'<p class="note" style="margin:16px 0 14px">'+(devPick?'You picked: <b>'+devLabel(devPick)+'</b>':'Pick your device to continue.')+(first?' You can not close this until you choose.':'')+'</p>'+
       '<button class="btn primary" id="devdone" '+(devPick?'':'disabled')+' style="width:100%;justify-content:center">Done</button></div>';
   };
   m._paint=paint;paint();m.classList.remove('hide');syncScroll();sfx('open');
@@ -4657,18 +4706,18 @@ document.addEventListener('click',e=>{
   const m=$('devmodal');if(!m||m.classList.contains('hide'))return;
   let b;
   if(e.target.closest('#devx')){closeDevice();return}
-  if(e.target.closest('#devauto')){devPick=detectDevice();m._paint();sfx('success');return}
-  if(b=e.target.closest('[data-dev]')){const [c,o]=b.dataset.dev.split('|');devPick={cls:c,os:o};m._paint();sfx('click');return}
-  if(e.target.closest('#devdone')&&devPick){DEV={cls:devPick.cls,os:devPick.os,ts:Date.now()};try{localStorage.setItem('mrv_dev',JSON.stringify(DEV))}catch(x){}applyDev();m.dataset.first='';closeDevice();sfx('success');try{pushToast('Device saved: <b>'+esc(devLabel(DEV))+'</b>','✅',4000)}catch(x){}}
+  if(e.target.closest('#devauto')){devPick=detectDevice();devErr='';m._paint();sfx('success');return}
+  if(b=e.target.closest('[data-dev]')){const [c,o]=b.dataset.dev.split('|');devPick={cls:c,os:o};devErr='';m._paint();sfx('click');return}
+  if(e.target.closest('#devdone')&&devPick){
+    const det=detectDevice();
+    if(devPick.cls!==det.cls||devPick.os!==det.os){devErr='Error: you must be using a <b>'+esc(devLabel(devPick))+'</b> to continue with that choice. This device looks like a <b>'+esc(devLabel(det))+'</b>. Pick the device you are on, or press Auto choose.';m._paint();sfx('error');return}
+    DEV={cls:devPick.cls,os:devPick.os,ts:Date.now()};try{localStorage.setItem('mrv_dev',JSON.stringify(DEV))}catch(x){}applyDev();m.dataset.first='';closeDevice();sfx('success');try{pushToast('Device saved: <b>'+esc(devLabel(DEV))+'</b>','✅',4000)}catch(x){}}
 });
 document.addEventListener('keydown',e=>{
   if(e.key==='Escape'&&$('devmodal')&&!$('devmodal').classList.contains('hide')){if(!$('devmodal').dataset.first)closeDevice();return}
-  if((e.key==='p'||e.key==='P')&&!e.ctrlKey&&!e.metaKey&&!e.altKey){
-    const a=document.activeElement;if(a&&/^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)||a&&a.isContentEditable)return;
-    if(!document.body.classList.contains('presenting')){ensureDev();const p=$('devpill');p.classList.toggle('hide');try{sessionStorage.setItem('mrv_devhide',p.classList.contains('hide')?'1':'0')}catch(x){}}
-  }
 });
 function deviceFirstVisit(){ensureDev();if(!DEV)openDevice(true)}
+setTimeout(()=>{try{if(!DEV&&$('loader').classList.contains('off')&&$('devmodal').classList.contains('hide'))deviceFirstVisit()}catch(e){}},9000);
 loadDev();ensureDev();
 
 /* ===== v9 · per render hook ===== */
@@ -5508,7 +5557,7 @@ document.addEventListener('click',e=>{
 
 /* --- students: Join Game tab + play screen --- */
 function renderJGame(){
-  const box=$('jgbox');if(!box||!ME||ME.role!=='student')return;
+  const box=$('jgbox');if(box&&ME&&ME.role!=='student'){if(!box.dataset.t){box.dataset.t=1;box.innerHTML='<div class="jgnote"><b>Students join here</b><p>Start a game from Teacher Tools, then students type the game code on this page to join.</p></div>'}return}if(!box||!ME)return;if(box.dataset.t){delete box.dataset.t;box.dataset.sig=''}
   const g=GJ&&C.games[GJ];
   const sig=[GJ,g?g.state:'',restr()?1:0].join('|');
   const ae=document.activeElement;if(ae&&ae.id==='jgcode')return;
@@ -6645,6 +6694,105 @@ document.addEventListener('click',e=>{
   if(b=T.closest('[data-chmdel]')){delQuiet('chat',b.dataset.chmdel).then(chReviewRender);return}
   if(b=T.closest('[data-chclr]')){const k=b.dataset.chclr;askConfirm('Clear this chat?','All messages between these two students are deleted.',async()=>{for(const [i,m] of Object.entries(C.chat)){if(m.t===k)await delQuiet('chat',i)}chReviewRender()});return}
 });
+
+
+/* ===== v9 · shared data across devices (Firebase Realtime Database over plain web requests) ===== */
+const FB_URL='';
+let FBLIVE=false;
+(function(){
+  const ek=s=>String(s).replace(/[.$#\[\]\/%]/g,c=>'%'+c.charCodeAt(0).toString(16).toUpperCase().padStart(2,'0'));
+  const dk=s=>String(s).replace(/%([0-9A-F]{2})/g,(m,h)=>String.fromCharCode(parseInt(h,16)));
+  const base=String(FB_URL||'').trim().replace(/\/+$/,'');
+  if(!/^https?:\/\//.test(base))return;
+  const norm=()=>{const d=DEF();Object.keys(d).forEach(k=>{if(C[k]==null||typeof C[k]!=='object')C[k]=d[k]});C.cls=Object.assign({xp:0,hue:221,coinMult:1},C.cls)};
+  let rt=0,cacheT=0,dirty=new Set(),seeded=false;
+  const cache=()=>{clearTimeout(cacheT);cacheT=setTimeout(()=>{try{const raw=JSON.stringify(C);localStorage.setItem(LK,raw);lastRaw=raw}catch(e){}},3000)};
+  const sched=()=>{
+    clearTimeout(rt);
+    const only=[...dirty].every(k=>k==='sessions'||k==='gpl');
+    rt=setTimeout(()=>{dirty.clear();try{render()}catch(e){console.error(e)}},only?1500:60);
+  };
+  function setAt(segs,data,merge){
+    if(segs.length===1){
+      const k=segs[0];
+      if(data==null){C[k]=DEF()[k]!==undefined?DEF()[k]:{}}
+      else if(merge&&typeof C[k]==='object')Object.assign(C[k],data);
+      else C[k]=data;
+      return;
+    }
+    let o=C;
+    for(let i=0;i<segs.length-1;i++){const s=segs[i];if(o[s]==null||typeof o[s]!=='object')o[s]={};o=o[s]}
+    const last=segs[segs.length-1];
+    if(data==null)delete o[last];
+    else if(merge&&o[last]&&typeof o[last]==='object'&&typeof data==='object')Object.assign(o[last],data);
+    else o[last]=data;
+  }
+  function apply(path,data,merge){
+    const segs=String(path||'/').split('/').filter(Boolean).map((s,i)=>i===1?dk(s):s);
+    if(!segs.length){
+      if(merge){Object.keys(data||{}).forEach(k=>{setAt([k],data[k],false);dirty.add(k)})}
+      else if(data==null||!Object.keys(data).length){
+        if(!seeded){seeded=true;fetch(base+'/.json',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify(C)}).catch(()=>{})}
+      }else{C=Object.assign(DEF(),data);Object.keys(C).forEach(k=>dirty.add(k))}
+      norm();
+    }else{
+      if(merge&&data&&typeof data==='object'){Object.keys(data).forEach(k=>setAt(segs.concat([k]),data[k],false))}
+      else setAt(segs,data,false);
+      dirty.add(segs[0]);
+    }
+    loaded=true;FBLIVE=true;cache();sched();
+  }
+  function connect(){
+    let es;
+    try{es=new EventSource(base+'/.json')}catch(e){return}
+    const on=(ev,merge)=>es.addEventListener(ev,m=>{try{const j=JSON.parse(m.data);apply(j.path,j.data,merge)}catch(e){console.error(e)}});
+    on('put',false);on('patch',true);
+    es.onerror=()=>{FBLIVE=false};
+  }
+  const doc=path=>{
+    const [k,id]=path.split('/');
+    const loc=path==='class/state'?'cls':k+'/'+ek(id);
+    const send=async(method,body)=>{
+      const r=await fetch(base+'/'+loc+'.json',{method,headers:{'Content-Type':'application/json'},body:body===undefined?undefined:JSON.stringify(body)});
+      if(!r.ok)throw new Error('save '+r.status);
+    };
+    return {
+      set:async d=>{
+        if(path==='class/state')C.cls=d;else{if(!C[k]||typeof C[k]!=='object')C[k]={};C[k][id]=d}
+        dirty.add(path==='class/state'?'cls':k);cache();await send('PUT',d);
+      },
+      delete:async()=>{
+        if(path!=='class/state'&&C[k])delete C[k][id];
+        dirty.add(k);cache();await send('DELETE');
+      }
+    };
+  };
+  DB={doc};
+  loaded=false;
+  setTimeout(()=>{if(!loaded){loaded=true;try{render()}catch(e){}}},4000);
+  connect();
+})();
+
+/* ===== v9 · stay logged in on this device for good ===== */
+function sessSet(o){
+  const j=JSON.stringify(Object.assign({t:Date.now()},o));
+  try{localStorage.setItem(SKEY,j)}catch(e){}
+  try{sessionStorage.setItem(SKEY,j)}catch(e){}
+  try{document.cookie=SKEY+'='+encodeURIComponent(j)+';max-age=315360000;path=/;SameSite=Lax'}catch(e){}
+  try{window.name='mrvsess:'+j}catch(e){}
+}
+function sessGet(){
+  const tries=[()=>localStorage.getItem(SKEY),()=>sessionStorage.getItem(SKEY),
+    ()=>{const m=document.cookie.match(new RegExp('(?:^|; )'+SKEY+'=([^;]*)'));return m?decodeURIComponent(m[1]):null},
+    ()=>String(window.name).indexOf('mrvsess:')===0?String(window.name).slice(8):null];
+  for(const f of tries){try{const v=f();if(v)return JSON.parse(v)}catch(e){}}
+  return null;
+}
+function sessClear(){
+  try{localStorage.removeItem(SKEY)}catch(e){}try{sessionStorage.removeItem(SKEY);sessionStorage.removeItem('mrv_owner')}catch(e){}
+  try{document.cookie=SKEY+'=;max-age=0;path=/'}catch(e){}
+  try{if(/^mrv(sess|own)/.test(String(window.name)))window.name=''}catch(e){}
+}
 
 /* ===================== end v9 ===================== */
 $('hcoin').appendChild(coin(MAIN,'coin'));$('hvcc').appendChild(coin(GOLD,'coin','gold'));
