@@ -1,3 +1,3 @@
-Mr.Vander noth github website repository
+Mr.Vandernoth github website repository
 
 Chris Vandernoth main repository of github
